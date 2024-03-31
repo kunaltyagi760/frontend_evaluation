@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Evaluation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Prosto+One&family=Ubuntu&family=ZCOOL+KuaiLe&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&family=Ubuntu&family=ZCOOL+KuaiLe&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&family=Shojumaru&family=Ubuntu&family=ZCOOL+KuaiLe&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: auto;
+            width: 1512px;
+            margin: auto;
+        }
+        .home{
+            width: 1512px;
+            height: 588px;
+            margin: auto;
+            background: url("/img/Rectangle\ 18.svg");
+
+        }
+        .home > nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 27px 88px;
+            align-items: center;
+        }
+        .home > nav > div{
+            display: flex;
+            align-items: center;
+        }
+        nav p{
+            font-family: ZCOOL KuaiLe;
+        }
+        nav img{
+            margin-top: 21px;
+        }
+        .home > nav > div:first-child > p{
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+        .home > nav > div:nth-child(2){
+            padding: 16px 24px 16px 24px;
+            gap: 24px;
+            border-radius: 20px;
+            background-color: #191818;
+;
+        }
+        .home > nav > div:nth-child(2) > p{
+            margin: 0px;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .btn{
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: left;
+            padding: 16px 10px;
+            border-radius: 10px;
+            color: #FFFFFF;
+            background: linear-gradient(135deg, red, orange);
+            border: none;
+            height: 12px;
+        }
+        .home > div{
+            display: flex;
+            justify-content: center;
+            font-family: Shojumaru;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 53.55px;
+            text-align: center;
+            color: #FBF6F6;
+            margin-top: 92px;
+        }
+        .intro{
+            display: flex;
+            justify-content: center;
+            height: 3300pxpx;
+            background-color: #191818;
+
+        }
+        .intro > div{
+            padding-left: 166px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .intro > div >p:first-child{
+            padding-top: 89px;
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: left;
+            color: #ED0137;
+;
+        }
+        .intro > div >p:nth-child(2){
+            padding: 24px 0px;
+            font-family: ZCOOL KuaiLe;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.56px;
+            text-align: left;
+            color: #FFFFFF;
+
+        }
+        .btn2{
+            width: 150px;
+            color: #FFFFFF;
+            height: 54.06pxpx;
+            padding: 17.03px 21.29px 17.03px 21.29px;
+            gap: 11.35px;
+            border-radius: 21.92px;
+            background: linear-gradient(93.73deg, #D51B46 10.19%, #EE6910 98.19%);
+            border: none;
+            font-family: ZCOOL KuaiLe;
+            font-size: 20.03px;
+            font-weight: 400;
+            line-height: 20.03px;
+            text-align: left;
+
+        }
+        .road{
+            background: url("img/Rectangle\ 21.svg");
+            width: 1512px;
+            height: 716px;
+            background-color: #191818;
+        }
+        .road p{
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: center;
+            color: #ED0137;
+            padding-top: 64px;
+            margin-bottom: 112px;
+
+        }
+        .road div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .road img{
+            border: 1px solid red;
+        }
+        .faq{
+            background-color: #191818;
+        }
+        .site{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #191818;
+        }
+        .site > p{
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 25.64px;
+            letter-spacing: 1.7090909481048584px;
+            text-align: left;
+            background: linear-gradient(92.23deg, #FF002A 5.2%, #720005 90.93%);
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="containeer">
+            <div class="home">
+                <nav>
+                    <div>
+                        <img src="img/Logo Savior red copy 1.svg" alt="">
+                        <p>Saviour</p>
+                    </div>
+                    <div>
+                        <p>Home</p>
+                        <p>IDO</p>
+                        <p>Tokenomics</p>
+                        <p>Roadmap</p>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="btn">Connect Wallet</div>
+                </nav>
+                <div>Where Blockchain Heroes Thrive, Rescuing Dreams, Elevating Fortunes.</div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <div>
+                <p>Introduction</p>
+                <p>We've all been in the mud once, and now we've decided to fight it out. 
+                    Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky ones alive, join us to save the future! 
+                    Our mission is to empower everyone to share wealth and succeed. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur delectus sapiente esse incidunt neque perferendis qui quos, architecto facere quibusdam rem cum. Fugiat dicta quaerat mollitia aut deserunt? Praesentium, possimus!
+                    
+                    </p>
+                <span class="btn2">Documents</span>
+            </div>
+            <img src="img/Brick_Matrix_Generate_a_logo_concept_that_visually_represents_t_9df3d56e-2aaa-42b8-add9-01ba1b656499 2.svg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="road">
+            <p>Road Map</p>
+            <div>
+                <img src="img/Frame 1815.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="faq">
+            <img src="img/image 1.svg" alt="">
+            <div>
+                <p>FAQ</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="site">
+            <img src="img/Frame 1790.svg" alt="">
+            <p>SITEMAP</p>
+        </div>
+    </div>
+</body>
+</html>
